@@ -17,67 +17,141 @@
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap" rel="stylesheet"/>
 		<title>Sean R. Curran, Product Designer - srcurran.com</title>
 		<style type="text/css">
-			body {padding: 4.5rem 1rem;font-family: "Inter", sans-serif;background: #1c2829;color: #94A1A3;letter-spacing: 0.05rem;line-height: 1.35;margin:0;}
-			div.content-container {max-width: 45rem;margin: 0 auto;}
-			h1 {font-weight: 500;font-size: 1.25rem;margin-bottom: 10rem;}
-			h2 {font-weight: 500;font-size: 3rem;margin-top: -2rem;color:#f5f5f5}
-			p.lede{font-size:2rem}
-			p {font-weight: 300;font-size: 1.5rem;}
-			p.small {font-size: 0.875rem;}
-			span.alt-color {color: #f5f5f5;}
-			a {color: #aebb9a;}
-			p.links {border-top: 1px solid #df5f3e;padding-top: 3rem;}
-			@media screen and (min-width: 600px) {.mobile-break {display: none;}}
+            html{
+                font-size:16px;
+                height: 100%;
+            }
+			body {
+                position: relative;
+                margin: 0 1.5rem;
+                font-family: "Inter", sans-serif;
+                background: #FFF9F3;
+                color: #212729;
+                letter-spacing: 0.05rem;
+                height:100%;
+            }
+			div.content-container {
+                max-width: 45rem;
+                margin: 0 auto;
+                display:flex;
+                flex-flow: column;  
+                height: 100%;
+            }
+
+            section.intro{
+                flex: 0 1 auto;
+                display:grid;
+                grid-auto-flow: column;
+                grid-auto-columns: 1fr;
+                column-gap:3rem;
+                row-gap: 1rem;
+                padding: 5rem 0;
+                border-bottom: 1px solid #848B8E;
+            }
+            @media screen and (max-width: 600px) {
+                section.intro{
+                    grid-auto-flow: row;
+                }
+            }
+            h1.name_title{
+                margin:0;
+                text-align: justify;
+                text-align-last: justify;
+                font-size:1.75rem;
+                font-weight:500;
+                letter-spacing: 1%;
+                line-height: 3rem;
+            }
+            h1.name_title .title{
+                color:#828D78;
+            }
+            h1.name_title .hidden_hyphen{
+                color:#fff9f3
+            }
+            p.lede{
+                display:block;
+                margin:0;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 2.375rem;
+                color: #848B8E;
+            }
+
+            section.details{
+                padding: 5rem 0;
+                flex: 1 2 auto;
+                font-weight:200;
+            }
+            section.details p{
+                font-size:1.125rem;
+                line-height:2rem;
+                color: #848B8E;
+            }
+            section.details p .alt-color{
+                color:#212729;
+            }
+
+            section.footer{
+                border-top: 1px solid #848B8E;
+                flex: 0 1 auto;
+                padding: 5rem 0 2rem;
+                display:flex;
+                justify-content: space-between;
+                font-weight:200;
+            }
+            section.footer a{
+                font-size:1.125rem;
+                color: #828D78;
+            }
+            section.footer a:hover{
+                color: #5A6550;
+            }
+                
 		</style>
 	</head>
 	<body>
 		<div class="content-container">
-			<h1 class="name">
-				<span class="alt-color">Sean R. Curran</span> /
-				<br class="mobile-break" />
-				Digital Product Design Lead
-			</h1>
-			<h2>Hello 👋</h2>
-			<p class="lede">
-				Sean Curran is a <span class="alt-color">Digital Product Designer</span> with a dozen+ years of industry experience.
-			</p>
-			<p>
-				<span class="alt-color">Open for new opportunities in 2023.</span>
-			</p>
-			<p>
-				Most recently designing on staff at <span class="alt-color">Hawthorne.co</span> a DTC men's grooming startup.
-			</p>
-			<p>
-				I've previously worked at a bunch of incredible firms (e.g.,
-				<span class="alt-color">Huge</span>,
-				<span class="alt-color">AKQA</span>,
-				<span class="alt-color">R/GA</span>, 
-				<span class="alt-color">Grow</span>, 
-				<span class="alt-color">Cuban Council</span> &
-				<span class="alt-color">Green Stone</span>) 
-				on some of the world's top brands (e.g., 
-				<span class="alt-color">Salesforce</span>,
-				<span class="alt-color">Hanna Andersson</span>,
-				<span class="alt-color">Yummly</span>,
-				<span class="alt-color">Google</span>,
-				<span class="alt-color">Neiman Marcus</span>,
-				<span class="alt-color">Resource Furniture</span>,
-				<span class="alt-color">Starbucks</span>,
-				<span class="alt-color">Samsung</span> &
-				<span class="alt-color">Tile</span>). 
-			</p>
-			<p>
-				Let's chat –
-				<a href="mailto:srcurran@gmail.com">srcurran@gmail.com</a>
-			</p>
-			<br />
-			<p class="small links">
-				<a href="https://www.linkedin.com/in/srcurran/">LinkedIn</a> •
-				<a href="https://github.com/srcurran">Github</a>
-			</p>
-			<p class="small">
-				Thanks for stopping by!
-			</p>
+            <section class="intro">
+                <h1 class="name_title">
+                    <div class="name">Sean R Curran</div>
+                    <div class="title">Digital<span class="hidden_hyphen">-</span>Product /</div>
+                    <div class="title">UX Design</div>
+                </h1>
+                <p class="lede">
+                    Combining a dozen years of design expertise and development knowledge to create usable, strategic and clever solutions that meet business needs.
+                </p>
+            </section>
+            <section class="details">
+                <p>
+                    <span class="alt-color">Open for new opportunities in 2023.</span>
+                </p>
+                <p>
+                    Most recently designing on staff at <span class="alt-color">Hawthorne.co</span> a DTC men's grooming startup.
+                </p>
+                <p>
+                    I've previously worked at a bunch of incredible firms (e.g.,
+                    <span class="alt-color">Huge</span>,
+                    <span class="alt-color">AKQA</span>,
+                    <span class="alt-color">R/GA</span>, 
+                    <span class="alt-color">Grow</span>, 
+                    <span class="alt-color">Cuban Council</span> &
+                    <span class="alt-color">Green Stone</span>) 
+                    on some of the world's top brands (e.g., 
+                    <span class="alt-color">Salesforce</span>,
+                    <span class="alt-color">Hanna Andersson</span>,
+                    <span class="alt-color">Yummly</span>,
+                    <span class="alt-color">Google</span>,
+                    <span class="alt-color">Neiman Marcus</span>,
+                    <span class="alt-color">Resource Furniture</span>,
+                    <span class="alt-color">Starbucks</span>,
+                    <span class="alt-color">Samsung</span> &
+                    <span class="alt-color">Tile</span>). 
+                </p>
+            </section>
+            <section class="footer">
+                    <div><a href="mailto:srcurran@gmail.com">srcurran@gmail.com</a></div>
+                    <div><a href="https://www.linkedin.com/in/srcurran/">LinkedIn</a> &middot; <a href="https://github.com/srcurran">Github</a></div>
+            </section>
 		</div>
 	</body>
 </html>
