@@ -14,7 +14,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap" rel="stylesheet"/>
 		<title>Sean R. Curran, Product Designer - srcurran.com</title>
 		<style type="text/css">
             html{
@@ -25,17 +25,18 @@
                 position: relative;
                 margin: 0 1.5rem;
                 font-family: "Inter", sans-serif;
-                background: #212729;
-                color: #fff9f3;
+                background: #1F2426;     
+				color:#D7D1CB;
                 letter-spacing: 0.05rem;
                 height:100%;
             }
 			div.content-container {
-                max-width: 45rem;
+                max-width: 65rem;
                 margin: 0 auto;
                 display:flex;
                 flex-flow: column;  
                 height: 100%;
+				vertical-align:middle;
             }
 
             section.intro{
@@ -43,53 +44,69 @@
                 display:grid;
                 grid-auto-flow: column;
                 grid-auto-columns: 1fr;
-                column-gap:3rem;
-                row-gap: 1rem;
+                column-gap:4rem;
+                row-gap: 2rem;
                 padding: 5rem 0;
                 border-bottom: 1px solid #848B8E;
+;
             }
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 880px) {
                 section.intro{
                     grid-auto-flow: row;
                 }
             }
-            h1.name_title{
+            section.intro h1.name_title{
                 margin:0;
                 text-align: justify;
                 text-align-last: justify;
-                font-size:1.75rem;
+                font-size:2.5rem;
                 font-weight:500;
                 letter-spacing: 1%;
-                line-height: 3rem;
+                line-height: 4rem;
             }
-            h1.name_title .title{
+            section.intro h1.name_title .title{
                 color:#828D78;
             }
-            h1.name_title .hidden_hyphen{
-                color:#212729
+            section.intro h1.name_title .hidden_hyphen{
+                color:#1F2426
             }
-            p.lede{
+            section.intro p.lede{
                 display:block;
                 margin:0;
-                font-weight: 400;
-                font-size: 1rem;
-                line-height: 2.375rem;
-                color: #848B8E;
+                font-weight: 200;
+                font-size: 1.5rem;
+				line-height: 3rem;
+            }
+			@media screen and (max-width: 880px) {
+                section.intro p.lede{
+                    font-size: 1.32	5rem;
+					line-height: 2.5rem;
+                }
             }
 
             section.details{
                 padding: 5rem 0;
                 flex: 1 2 auto;
-                font-weight:200;
+                font-weight:300;
             }
             section.details p{
-                font-size:1.125rem;
+                font-size:1.25rem;
                 line-height:2rem;
-                color: #848B8E;
+				max-width: 45rem;
             }
             section.details p .alt-color{
-                color:#fff9f3;
+                color:#F8F8F6;
             }
+			section.details p.open-container{
+				margin-top:3rem;
+			}
+			section.details p.open-container span.open{
+				padding: 8px 16px;
+				background: #848B8E;
+				border-radius: 8px;
+				color:#1F2426;
+				font-weight:500;
+			}
 
             section.footer{
                 border-top: 1px solid #848B8E;
@@ -112,7 +129,7 @@
                 color: #828D78;
             }
             section.footer a:hover{
-                color: #5A6550;
+                color: #96A18C;
             }
                 
 		</style>
@@ -131,29 +148,13 @@
             </section>
             <section class="details">
                 <p>
-                    <span class="alt-color">Open for new opportunities in 2023.</span>
+                    Most recently was the lead digital product designer on staff at <span class="alt-color">Hawthorne.co</span> a DTC men's grooming startup. 
                 </p>
                 <p>
-                    Most recently designing on staff at <span class="alt-color">Hawthorne.co</span> a DTC men's grooming startup.
+                    Previously: UX and product design work for a bunch of incredible design firms and ad agencies (R/GA, Huge, Cuban Council, AKQA) on some of the world's top brands (Salesforce, Yummly, American Medical Assn, Nordstrom, Target). 
                 </p>
-                <p>
-                    I've previously worked at a bunch of incredible firms (e.g.,
-                    <span class="alt-color">Huge</span>,
-                    <span class="alt-color">AKQA</span>,
-                    <span class="alt-color">R/GA</span>, 
-                    <span class="alt-color">Grow</span>, 
-                    <span class="alt-color">Cuban Council</span> &
-                    <span class="alt-color">Green Stone</span>) 
-                    on some of the world's top brands (e.g., 
-                    <span class="alt-color">Salesforce</span>,
-                    <span class="alt-color">Hanna Andersson</span>,
-                    <span class="alt-color">Yummly</span>,
-                    <span class="alt-color">Google</span>,
-                    <span class="alt-color">Neiman Marcus</span>,
-                    <span class="alt-color">Resource Furniture</span>,
-                    <span class="alt-color">Starbucks</span>,
-                    <span class="alt-color">Samsung</span> &
-                    <span class="alt-color">Tile</span>). 
+				<p class="open-container">
+                    <span class="open">Available for work in 2023.</span>
                 </p>
             </section>
             <section class="footer">
