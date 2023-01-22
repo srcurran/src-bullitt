@@ -68,6 +68,7 @@
                 font-weight:500;
                 letter-spacing: 1%;
                 line-height: 4rem;
+                align-self: center;
             }
             h1.name_title .title{
                 color:#647253;
@@ -96,16 +97,6 @@
                 gap:2rem;
                 justify-content: space-between;
             }
-            @media screen and (max-width: 55rem) {
-                section.details{
-                    flex-direction: column-reverse;
-                }
-                div.open-container{
-                    margin-top: -13rem;
-                    display: flex;
-                    justify-content: flex-end;
-                }
-            }
             p{
                 font-weight:300;
                 font-size:1.25rem;
@@ -123,24 +114,6 @@
             .alt-color{
                 color:#647253;
             }
-			div.open-container{
-			}
-			div.open-container p span.open{
-				padding: 1rem;
-				background: #647253cc;
-				color:#F5EFE9;
-				font-weight:500;
-                text-align:center;
-
-                aspect-ratio: 1;
-                border-radius: 240px;
-                width: 120px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transform: rotate(5deg);
-			}
-
             section.logo-party-container{
                 margin:0 0 5rem;
             }
@@ -185,7 +158,8 @@
             .logo:hover{
                 cursor:none;
             }
-            .logo:hover .work-sample{
+            .logo:hover .work-sample,
+            .logo:focus .work-sample {
                 display:block;
             }    
 
@@ -237,12 +211,9 @@
                     </p>
                     <p>Portfolio is available upon request.</p>
                 </div>
-                <div class="open-container">
-                    <p><span class="open">Open for work 2013</span></p>
-                </div>
             </section>
             <section class="logo-party-container">
-                <p>Some of the great brands I have worked with —</p>
+                <p class="lede">Some of the great brands I have worked with —</p>
                 <div class="logo-party">
                     <div class="logo" id="hanna">
                         <img src="img/logos/logo-hanna.png" alt="Hanna Andersson Logo">                    
