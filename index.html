@@ -14,272 +14,178 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&family=Eczar:wght@500&display=swap" rel="stylesheet"/>
 		<title>Sean R Curran · Digital Product / UX Designer · srcurran.com</title>
 		<style type="text/css">
-            html{
-                font-size:16px;
-                height: 100%;
-            }
+            /* page structure */
+            html{font-size:16px;height: 100%;}
 			body {
-                position: relative;
-                margin: 0 4.5rem;
-                font-family: "Inter", sans-serif;
-                background: #F5EFE9;
-				color:#1F2426;
-                letter-spacing: 0.05rem;
-                height:100%;
+                position: relative;margin: 0 4.5rem;height:100%;
+                font-family: "Inter", sans-serif;letter-spacing:.05rem;font-weight:200;
+                background: #F5EFE9;color:#1F242;
             }
             @media screen and (max-width: 55rem) {
                 body{
-                    margin: 0 1.5rem;
+                    margin: 0 1rem;
                 }
             }
 			.content-container {
-                max-width: 65rem;
-                margin: 0 auto;
-                display:flex;
-                flex-flow: column;  
-                height: 100%;
-				vertical-align:middle;
+                max-width: 65rem;margin: 0 auto;
             }
 
+            /* section controls */
             section.intro{
-                flex: 0 1 auto;
-                display:grid;
-                grid-auto-flow: column;
-                grid-auto-columns: 1fr;
-                column-gap:4rem;
-                row-gap: 2rem;
-                padding: 5rem 0;
-                border-bottom: 1px solid #647253;
-;
+                margin: 5rem 0;
             }
-            @media screen and (max-width: 55rem) {
-                section.intro{
-                    grid-auto-flow: row;
+                h1.name_title{
+                    text-align: justify;text-align-last: justify;align-self: center;
+                    font-size:2.5rem;font-weight:500;letter-spacing: .1rem;line-height: 4rem;
                 }
-            }
-            h1.name_title{
-                margin:0;
-                text-align: justify;
-                text-align-last: justify;
-                font-size:2.5rem;
-                font-weight:500;
-                letter-spacing: 1%;
-                line-height: 4rem;
-                align-self: center;
-            }
-            h1.name_title .title{
-                color:#647253;
-            }
-            h1.name_title .hidden_hyphen{
-                color:#F5EFE9;
-            }
-            p.lede{
-                display:block;
-                margin:0;
-                font-weight: 200;
-                font-size: 1.5rem;
-				line-height: 3rem;
-            }
-			@media screen and (max-width: 55rem) {
-                p.lede{
-                    font-size: 1.32	5rem;
-					line-height: 2.5rem;
+                h1.name_title .title{
+                    color:#647253;
                 }
-            }
-
             section.details{
-                padding: 5rem 0;
-                font-weight:300;
-                display:flex;
-                gap:2rem;
-                justify-content: space-between;
+                margin: 5rem 0;   
+            }
+                .detail-wrapper{
+                    display:flex;gap:4rem;justify-content: space-between;
+                }
+                .detail-wrapper .detail-text p:first-child{
+                    margin-top:0;
+                }
+                .detail-wrapper div.image img{
+                    display: block;width:100%;border-radius: 1rem;
+                }
+                @media screen and (max-width: 55rem) {
+                    .detail-wrapper{
+                        flex-wrap:wrap;
+                    }
+
+                }
+            section.logo-party-container{
+                padding: 5rem 0;border-top:1px solid #647253;border-bottom:1px solid #647253;
+            }
+                .logo-party-container{
+                    display:grid;
+                    grid-template-columns: repeat(5, minmax(0, 1fr));
+                    gap:1rem;
+                }
+                    div.logo-wrapper{
+                        aspect-ratio:21/9;max-width:10rem;padding: 1rem 2rem;border-radius: .5rem;
+                    }
+                    div.logo-wrapper img{
+                        display:block;max-width:8rem;width:100%;margin:0 auto;
+                        filter:saturate(0);
+                    }
+                    .logo-wrapper:hover{
+                        background-color: #FFF9F3;
+                    }
+                    .logo-wrapper:hover img{
+                        filter: saturate(1);
+                    }
+                @media screen and (max-width: 55rem) {
+                    .logo-party-container{
+                        display:grid;grid-template-columns: repeat(2, minmax(0, 1fr));gap:1rem;
+                    }
+                }
+            section.footer{
+                padding: 5rem 0 2rem;
+                display:flex;flex-wrap: wrap; justify-content: space-between;
+            }
+                @media screen and (max-width: 55rem) {
+                    section.footer{
+                        grid-auto-flow: row;
+                    }
+                }
+                section.footer a{
+                    font-weight:300;font-size:1.125rem;color: #647253;text-decoration:none;
+                }
+                section.footer a:hover{
+                    color: #788667;
+                }
+            /* text styles */
+            
+
+            h2{
+                font-family:eczar;font-weight:500;font-size:3rem;
             }
             p{
-                font-weight:300;
-                font-size:1.25rem;
-                line-height:2rem;
-				max-width: 45rem;
+                font-weight:200;font-size:1.25rem;line-height:2rem;
+                max-width: 45rem;
+            }
+            p.lede{
+                display:block;font-weight: 200;
+                font-size: 1.5rem;line-height: 3rem;
+            }
+            p.request{
+                background-color:#848B8E;
+                color:#F5EFE9;
+                display: inline;
+                padding:.25rem .5rem;
+                border-radius: .25rem;
+            }
+            @media screen and (max-width: 55rem) {
+                p.lede{
+                    font-size: 1.32	5rem;
+                    line-height: 2.5rem;
+                }
             }
             p a{
-                color:#647253;
-                text-decoration: none;
+                color:#647253;text-decoration: none;
                 border-bottom:1px solid #647253;
             }
             p a:hover{
                 color:#788667
             }
+            
+            
+            /* color + spacing tweaks */
             .alt-color{
                 color:#647253;
+                
             }
-            section.logo-party-container{
-                margin:0 0 5rem;
+            .hidden_text{
+                color:#F5EFE9;
             }
-            div.logo-party{
-                max-width: 55rem;
-                margin-top:3rem;
-                column-count: 4;
-                column-gap:1rem;
+            .mb-3{
+                margin-bottom:3rem;
             }
-            @media screen and (max-width: 55rem) {
-                div.logo-party{
-                    column-count: 2;
-                    column-gap:1rem;
-                }
-            }
-            
-            div.logo-party .logo{
-                aspect-ratio: 16 / 10;
-                border:1px solid #AAB899;
-                border-radius: .25rem;     
-                padding: clamp(1rem, 1.5vw, 2rem) clamp(1rem, 2.5vw, 3rem);
-                object-fit: contain;  
-                margin-bottom:1rem;    
-            }
-            div.logo-party .logo img{
-                display: block;
-                height: 100%;
-                width: 100%;
-                object-fit: contain;
-            }
-            div.logo-party .logo:hover{
-                background:#F8F2EC;
-            }
-            .work-sample{
-                display:none;
-                top:var(--mouse-y);
-                left: var(--mouse-x);
-                position: fixed;
-                width:306px;
-                height:200px;
-            }
-            .logo:hover{
-                cursor:none;
-            }
-            .logo:hover .work-sample,
-            .logo:focus .work-sample {
-                display:block;
-            }    
-
-            section.footer{
-                border-top: 1px solid #647253;
-                flex: 0 1 auto;
-                padding: 5rem 0 2rem;
-                display:grid;
-                grid-auto-flow: column;
-                column-gap:3rem;
-                row-gap: 1rem;
-                justify-content: space-between;
-            }
-            @media screen and (max-width: 55rem) {
-                section.footer{
-                    grid-auto-flow: row;
-                }
-            }
-            section.footer a{
-                font-weight:300;
-                font-size:1.125rem;
-                color: #647253;
-                text-decoration:none;
-                padding-bottom: .0625rem;
-                border-bottom:1px solid #647253;
-
-            }
-            section.footer a:hover{
-                color: #788667;
-            }
-		</style>
+        </style>
 	</head>
 	<body>
 		<div class="content-container">
             <section class="intro">
                 <h1 class="name_title">
                     <div class="name">Sean R Curran</div>
-                    <div class="title">Digital<span class="hidden_hyphen">-</span>Product /</div>
+                    <div class="title">Digital<span class="hidden_text">-</span>Product /</div>
                     <div class="title">UX Design</div>
                 </h1>
-                <p class="lede">
-                    Combining fifteen years of design expertise and development knowledge to create clever, usable and strategic solutions that meet business needs.
-                </p>
             </section>
             <section class="details">
-                <div class="details">
-                    <p>
-                        I am a digital product designer with experience at start-ups and design firms. Most recently, I led digital product design at <a href="https://hawthorne.co">Hawthorne</a>, a DTC men's grooming start-up. Before that, I worked at many renowned shops such as AKQA, Huge, Cuban Council, and R/GA – designing websites and apps for some of the world's leading brands. I am skilled in research, strategic analysis, information architecture, user flows, wire-framing, prototyping, user testing, and development.
-                    </p>
-                    <p>Portfolio is available upon request.</p>
+                <h2>Hey, Hi, Hello!</h2>
+                <div class="detail-wrapper">
+                    <div class="detail-text">
+                        <p class="lede">I am a digital product designer with experience at start-ups and design firms. Combining fifteen years of design expertise and development knowledge to create clever, usable and strategic solutions that meet business needs.</p>
+                        <p class="">Most recently, I led digital product design at <a href="https://hawthorne.co">Hawthorne</a>, a DTC men's grooming start-up. Before that, I worked at many renowned shops such as AKQA, Huge, Cuban Council, and R/GA – designing websites and apps for some of the world's leading brands. </p>
+                        <p class="">I am skilled in research, strategic analysis, information architecture, user flows, wire-framing, prototyping, user testing, and development.</p>
+                        <p class="request">Portfolio is available upon request.</p>
+                    </div>
+                    <div class="image">
+                        <img src="img/sean-quilty.png" alt="me and quilty">
+                    </div>
                 </div>
             </section>
             <section class="logo-party-container">
-                <p class="lede">Some of the great brands I have worked with —</p>
-                <div class="logo-party">
-                    <div class="logo" id="google">
-                        <img src="img/logos/logo-google.png" alt="Google Logo">
-                        <div class="work-sample"><img src="img/work/work-google.png" alt="Google Work"></div>
-                    </div>
-                    <div class="logo" id="salesforce">
-                        <img src="img/logos/logo-salesforce.png" alt="salesforce Logo">                    
-                        <div class="work-sample"><img src="img/work/work-salesforce.png" alt="salesforce Work"></div>
-                    </div>
-                    <div class="logo" id="samsung">
-                        <img src="img/logos/logo-samsung.png" alt="samsung Logo">                    
-                        <div class="work-sample"><img src="img/work/work-samsung.png" altnutropin="samsung Work"></div>
-                    </div>
-                    <div class="logo" id="tile">
-                        <img src="img/logos/logo-tile.png" alt="tile Logo">
-                        <div class="work-sample"><img src="img/work/work-tile.png" alt="tile Work"></div>
-                    </div>
-                    <div class="logo" id="hawthorne">
-                        <img src="img/logos/logo-hawthorne.png" alt="Hawthorne Logo">
-                        <div class="work-sample"><img src="img/work/work-hawthorne.png" alt="Hawthorne Work"></div>
-                    </div>
-                    <div class="logo" id="hanna">
-                        <img src="img/logos/logo-hanna.png" alt="Hanna Andersson Logo">                    
-                        <div class="work-sample"><img src="img/work/work-hanna.png" alt="Google Work"></div>
-                    </div>
-                    <div class="logo" id="neiman">
-                        <img src="img/logos/logo-neiman.png" alt="Neiman Logo">
-                        <div class="work-sample"><img src="img/work/work-neiman.png" alt="Neiman Work"></div>
-                    </div>
-                    <div class="logo" id="resource">
-                        <img src="img/logos/logo-resource.png" alt="resource Logo">
-                        <div class="work-sample"><img src="img/work/work-resource.png" alt="resource Work"></div>
-                    </div>
-                    <div class="logo" id="yummly">
-                        <img src="img/logos/logo-yummly.png" alt="yummly Logo">
-                        <div class="work-sample"><img src="img/work/work-yummly.png" alt="yummly Work"></div>
-                    </div>
-                    <div class="logo" id="starbucks">
-                        <img src="img/logos/logo-starbucks.png" alt="starbucks Logo">
-                        <div class="work-sample"><img src="img/work/work-starbucks.png" alt="starbucks Work"></div>
-                    </div>
-                    <div class="logo" id="target">
-                        <img src="img/logos/logo-target.png" alt="target Logo">
-                        <div class="work-sample"><img src="img/work/work-target.png" alt="target Work"></div>
-                    </div>
-                    <div class="logo" id="fedex">
-                        <img src="img/logos/logo-fedex.png" alt="fedex Logo">
-                        <div class="work-sample"><img src="img/work/work-fedex.png" alt="fedex Work"></div>
-                    </div>
-                    <div class="logo" id="citi">
-                        <img src="img/logos/logo-citi.png" alt="citi Logo">
-                        <div class="work-sample"><img src="img/work/work-citi.png" alt="citi Work"></div>
-                    </div>
-                    <div class="logo" id="abbvie">
-                        <img src="img/logos/logo-abbvie.png" alt="abbvie Logo">                    
-                        <div class="work-sample"><img src="img/work/work-abbvie.png" alt="Abbvie Work"></div>
-                    </div>
-                    <div class="logo" id="ama">
-                        <img src="img/logos/logo-ama.png" alt="Marcus Logo">
-                        <div class="work-sample"><img src="img/work/work-ama.png" alt="ama Work"></div>
-                    </div>
-                    <div class="logo" id="nutropin">
-                        <img src="img/logos/logo-genentech.png" alt="nutropin Logo">
-                        <div class="work-sample"><img src="img/work/work-nutropin.png" alt="nutropin Work"></div>
-                    </div>
-                </div>
+                <div class="logo-wrapper"><img class="logo" src="img/logos/logo-google.png" alt="Google Logo"></div>
+                <div class="logo-wrapper"><img class="logo" src="img/logos/logo-salesforce.png" alt="salesforce Logo"></div>
+                <div class="logo-wrapper"><img class="logo" src="img/logos/logo-samsung.png" alt="samsung Logo"></div>
+                <div class="logo-wrapper"><img class="logo" src="img/logos/logo-hawthorne.png" alt="Hawthorne Logo"></div>
+                <div class="logo-wrapper"><img class="logo" src="img/logos/logo-tile.png" alt="tile Logo"></div>
+                <div class="logo-wrapper"><img class="logo" src="img/logos/logo-hanna.png" alt="Hanna Andersson Logo"></div>
+                <div class="logo-wrapper"><img class="logo" src="img/logos/logo-yummly.png" alt="yummly Logo"></div>
+                <div class="logo-wrapper"><img class="logo" src="img/logos/logo-starbucks.png" alt="starbucks Logo"></div>
+                <div class="logo-wrapper"><img class="logo" src="img/logos/logo-target.png" alt="target Logo"></div>
+                <div class="logo-wrapper"><img class="logo" src="img/logos/logo-citi.png" alt="citi Logo"></div>
             </section>
             <section class="footer">
                     <div><a href="mailto:srcurran@gmail.com">srcurran@gmail.com</a></div>
@@ -287,16 +193,5 @@
             </section>
 		</div>
 	</body>
-    
-    <script type="text/javascript">
-        let root = document.documentElement;
-
-        root.addEventListener("mousemove", e => {
-            var x = e.clientX - 160;
-            var y = e.clientY + 1;
-            root.style.setProperty('--mouse-x', x + "px");
-            root.style.setProperty('--mouse-y', y + "px");
-        });
-    </script>
 </html>
 
