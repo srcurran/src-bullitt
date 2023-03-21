@@ -17,17 +17,24 @@
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&family=Eczar:wght@500&display=swap" rel="stylesheet"/>
 		<title>Sean R Curran · Digital Product / UX Designer · srcurran.com</title>
 		<style type="text/css">
-            body{margin:0;background:#497787;color:#FFF9F3}
-            section.mini-logo{padding: 3rem;background:#353B3D;color:#D7D1CB;font-family:inter, arial, sans-serif;font-weight: 500;letter-spacing: .1rem;line-height:1.5;}
-                .mini-logo{}
+
+            body{margin:0;background:#353B3D;color:#FFF9F3}
+            section.mini-logo{padding: 3rem 1.5rem;background:#353B3D;color:#D7D1CB;font-family:inter, arial, sans-serif;font-weight: 500;letter-spacing: .1rem;line-height:1.5;}
+                @media screen and (max-width: 45rem) {section.mini-logo{padding: 2rem 1.5rem;}}
                 .mini-logo .inner{max-width:65rem;margin:0 auto;}
                 .mini-logo .inner .block{display:block;text-align: justify;text-align-last: justify;font-size:clamp(1.75rem, 3vw, 2.5em);}
                 .mini-logo .inner .block .hidden_text{color:#353B3D;}
-            section.content-container{padding: 2rem 2rem 5rem;max-width:65rem;margin:0 auto;}
+            section.content-container{background:#497787;}
+                .content-container .inner{max-width:65rem;margin:0 auto;padding: 2rem 1.5rem 5rem;}
                 .content-container h1{font-family: eczar, serif; font-weight:500;font-size:clamp(4rem, 20vw, 9rem);margin:2rem 0;line-height:1.1}
                 .content-container h2{font-family: eczar, serif; font-weight:500;font-size:clamp(1.75rem, 6vw, 4rem);margin:2rem 0;line-height:1.3}
-                .content-container p{font-family:inter, arial, sans-serif;font-weight:200;font-size:clamp(1rem, 2.5vw, 1.5rem);line-height:1.5;max-width:53ch;}
-                .content-container p a{color:inherit;font-weight:500;text-decoration:none}
+                .content-container p{font-family:inter, arial, sans-serif;font-weight:200;font-size:clamp(1.25rem, 2.5vw, 1.5rem);line-height:1.5;max-width:53ch;}
+                .content-container a{color:inherit;font-weight:500;text-decoration:none}
+                .content-container hr{margin:2rem 0;max-width:17ch}
+                .content-container ul{padding:0;margin:0;}
+                .content-container ul li{display:block;font-family:inter, arial, sans-serif;font-weight:200;font-size:clamp(1rem, 1.5vw, 1.25rem);line-height:1.5;max-width:53ch;margin:.5rem 0}
+                .content-container ul li a{font-weight:200;padding:.25rem 0;display:block;}
+
         </style>
 	</head>
 	<body>
@@ -39,11 +46,20 @@
             </div>
         </section>
 		<section class="content-container">
+            <div class="inner">
                 <h1>Hello!<br/> I'm Sean.</h1>
                 <h2>A digital product / UX designer with fifteen years of experience —</h2>
                 <h2>A meticulous combination of startup scrappiness, agency hustle, and consulting range.</h2>
                 <p>Most recently, I led digital product design at <a href="https://hawthorne.co">Hawthorne</a>, a DTC men's grooming startup. Before that, I worked at many renowned shops such as <a href="https://akqa.com">AKQA</a>, <a href="https://hugeinc.com">Huge</a>, and <a href="https://rga.com">R/GA</a> – designing apps and websites for some of the world's leading brands. </p>
                 <p>Currently available for full-time or freelance work <a href="mailto:srcurran@gmail.com">srcurran@gmail.com</a></p>        
+                <hr>
+                <ul class="links">
+                    <li><a href="https://linkedin.com/in/srcurran">LinkedIn</a></li>
+                    <li><a href="https://read.cv/srcurran">Read.cv</a></li>
+                    <li><a href="https://github.com/srcurran">Github</a></li>
+                    <li><em>Portfolio available upon request</em></li>
+                </ul>
+            </div>
         </section>
 	</body>
 </html>
