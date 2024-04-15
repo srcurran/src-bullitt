@@ -14,71 +14,91 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700@1&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,200..900&display=swap" rel="stylesheet">
 		<title>Sean R Curran · Digital Product / UX Designer · srcurran.com</title>
 		<style type="text/css">
 
-            body{margin:0;background:#31302F;color:#FEFAF6;}
-            section.mini-logo{padding: 5rem 1.5rem;background:#31302F;color:#B5C8CE;font-family:inter, arial, sans-serif;font-weight: 300;letter-spacing: .1rem;line-height:1.5;}
+            body{margin:0;background:#31302F;color:#FEFAF6;font-family:inter, arial, sans-serif;font-weight:200;line-height:2;letter-spacing:.05em;}
+            section.mini-logo{padding: 5rem 1.5rem;background:#31302F;color:#B5C8CE;line-height:1.5;}
                 @media screen and (max-width: 45rem) {section.mini-logo{padding: 4rem 1.5rem;}}
                 .mini-logo .inner{max-width:55rem;margin:0 auto;}
                 .mini-logo .inner .block{display:block;text-align: justify;text-align-last: justify;font-size:clamp(32px, 5vw, 45px);}
-                .mini-logo .inner .block .hidden_text{color:#31302F;}
-                .mini-logo .inner .block.alt-color{color:#F5EFE9;}
-            section.content-container{background: #FEFAF6;color:#31302F;padding: 6rem 1.5rem}
-                @media screen and (max-width: 45rem) {section.content-container{padding: 5rem 1.5rem;}}
-                .content-container .inner{max-width:55rem;margin:0 auto;display:flex;flex-direction:column;gap:1.5rem;}
-                .content-container p.xl{font-family: 'source serif 4', serif;font-weight:300;font-size:clamp(38px, 10vw, 72px);line-height:1.3;letter-spacing:.05ch;margin:0 0 .5em;}
-                .content-container p{font-family:inter, arial, sans-serif;font-weight:200;font-size:20px;line-height:170%;max-width:53ch;}
-                .content-container a{color:inherit;text-decoration:none;border-bottom:1px solid #B5C8CE;}
-                .content-container ul{padding:0;margin:0;display:flex;gap: 32px}
-                .content-container ul li{display:block;font-family:inter, arial, sans-serif;font-weight:200;font-size:clamp(1rem, 1.5vw, 1.25rem);line-height:1.5;max-width:53ch;margin:.5rem 0}
-                .content-container ul li a{display:block;}
-            section.employers{background: #31302F;color: #FEFAF6;padding: 5rem 1.5rem}
-                section.employers .inner{max-width:55rem;margin:0 auto;display:flex;flex-direction:column;gap:3rem;}
-                .employers h3{color: var(--neutral-500, #B5C8CE);font-family: Inter;font-size: 11px;font-style: normal;font-weight: 300;line-height: 120%;letter-spacing: 2.7px;text-transform: uppercase;margin:0;}
-                .employers p{font-family: Inter;font-size: clamp(28px, 3.5vw, 32px);font-style: normal;font-weight: 300;line-height: 200%;letter-spacing: 0.21px;margin:0;}
-                section.employers .companies{display:flex;flex-direction: column;gap:1rem;}
+                .mini-logo .inner .block .hidden_text{color:rgba(0,0,0,0);}
+                .mini-logo .inner .block.accent-color{color:#F5EFE9;}
+
+            section.content-container{padding: 6rem 1.5rem}
+            @media screen and (max-width: 45rem) {section.content-container{padding: 5rem 1.5rem;}}
+                .inner{max-width:55rem;margin:0 auto;display:flex;flex-direction:column;gap:1.5rem;}
+                a{color:inherit;text-decoration:none;border-bottom:1px solid #B5C8CE;}
+                ul{margin:0;padding:0;}
+
+            .about {background: #FEFAF6;color:#31302F;}    
+                .about p{font-weight:200;font-size:20px;max-width:53ch;margin:0.5em 0;}
+                .about p.xl{font-family: 'source serif 4', serif;font-weight:300;font-size:clamp(38px, 10vw, 72px);line-height:130%;margin:0 0 .5em;}
+                
+            section.employers{background: #31302F;color: #FEFAF6}
+                .employers h2{font-size: 11px;font-weight: 300;text-transform: uppercase;}
+                .employers ul{display:flex;flex-wrap:wrap;gap:0rem 2rem}
+                .employers ul li{margin-right:1rem;list-style:none;}
+                .employers ul li{font-size: 28px;font-weight:300;}
+                .employers ul li .client{color: #B5B1AD;font-weight: 100;margin:0}
+                
+            
+            section.links ul li{display:block;margin-bottom:1rem;}
+                
 
         </style>
 	</head>
 	<body>
         <section class="mini-logo">
             <div class="inner">
-                <span class="block alt-color">Sean R Curran</span>
+                <span class="block accent-color">Sean R Curran</span>
                 <span class="block">Digital<span class="hidden_text">-</span>Product /</span>
                 <span class="block">UX Design</span>
             </div>
         </section>
-		<section class="content-container">
+		<section class="about content-container">
             <div class="inner">
                 <div class="copy">
                     <p class="xl">Hello, I'm Sean</p>
                     <p class="xl">A designer with 15+ years of experience solving problems for people and businesses in delightful, strategic & user-friendly ways.</p>
                     <p>I am currently heading design at <a href="https://www.foyersavings.com/lp/401k-home-ownership">Foyer Savings</a>.</p>
-                    <p>Reach out, any time!  <a href="mailto:srcurran@gmail.com">srcurran@gmail.com</a></p>       
                 </div>
             </div>
         </section>
         <section class="employers content-container">
             <div class="inner">
-               <div class="companies">
-                   <h3>Who I've worked with:</h3>
-                   <p>AKQA · Huge · R/GA · Hawthorne · Foyer · Cuban Council · Grow · Sapient · Fluid · Tile · Said Differently · Green Stone · VSA Partners · IA Collaborative</p>
-               </div>
-               <div class="companies">
-                   <h3>Select client list:</h3>
-                   <p>Google · Salesforce · Samsung · IBM · Chase · Visa · Yummly · Starbucks · Neiman Marcus · Target · Hanna Andersson · American Medical Assn. · Abbvie · FedEx · Universal Studios · Levi's</p>
-               </div>
-               <ul class="links">
+                <h2>Who I've worked with:</h2>
+                <ul>
+                    <li>Hawthorne</li>
+                    <li>Foyer</li>
+                    <li>AKQA <span class="client">Target, Visa, Xbox, Nike, Gap</span></li>
+                    <li>Huge <span class="client">Chase, Universal Studios</span></li>
+                    <li>R/GA <span class="client">Samsung, Equinox</span></li>
+                    <li>Cuban Council <span class="client">Yummly, Levi's, Zynga</span></li>
+                    <li>Grow <span class="client">Google</span></li>
+                    <li>Savage Bureau <span class="client">Salesforce</span></li>
+                    <li>Sapient <span class="client">Starbucks</span></li>
+                    <li>Fluid <span class="client">Hanna Andersson</span></li>
+                    <li>Said Differently <span class="client">Neiman Marcus</span></li>
+                    <li>Green Stone <span class="client">LegalShield, Elevations CU</span></li>
+                    <li>Tile</li>
+                    <li>VSA Partners <span class="client">AMA, Marvin Windows, Abbvie</span></li>
+                    <li>IA Collaborative <span class="client">IBM</span></li>
+                </ul>
+            </div>
+        </section>
+        <section class="links content-container">
+            <div class="inner">        
+               <ul>
                    <li><a href="https://linkedin.com/in/srcurran">LinkedIn</a></li>
                    <li><a href="https://github.com/srcurran">Github</a></li>
                    <li><a href="mailto:srcurran@gmail.com">Portfolio available upon request</a></li>
+                   <li><a href="mailto:srcurran@gmail.com">srcurran@gmail.com</a></li>
                </ul>
             </div>
         </section>
 
 	</body>
 </html>
-
