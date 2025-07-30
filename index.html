@@ -18,18 +18,23 @@
                 a{color:inherit;text-decoration:none;border-bottom:1px solid #7E9EAA;}
                 ul{margin:0;padding:0;}
 
-            .about {background: #FEFAF6;color:#31302F;}    
-                .about p{font-weight:200;font-size:20px;max-width:53ch;margin:0.5em 0;}
-                .about p.xl{font-family: 'bricolage grotesque', serif;font-weight:800;font-size:clamp(38px, 10vw, 72px);line-height:130%;margin:0 0 .5em;}
+            .about {background: #FEFAF6;color:#31302F;text-align:center;
+                background-image: url('data:image/svg+xml;utf8,<svg width="574" height="862" viewBox="0 0 574 862" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M260.616 801C310.893 741.15 343.601 712.025 391.515 649.596C453.566 568.746 505.68 478.972 523.793 387.999C532.288 345.333 537.087 317.202 529.996 278.256C521.783 233.145 465.377 387.321 443.487 430.8C426.546 464.45 412.579 499.338 383.097 527.877C360.395 549.854 413.676 475.867 426.213 449.183C460.067 377.133 478.864 308.055 485.002 235.14C486.64 215.677 494.988 154.624 470.878 144.551C454.049 137.519 414.963 254.285 411.937 262.238C386.023 330.343 352.544 396.112 314.647 461.471C266.835 543.931 393.104 290.625 412.024 204.113C419.216 171.228 428.54 122.248 404.389 98.232C386.285 80.2282 348.685 172.822 345.373 180.469C315.904 248.503 283.593 315.789 243.892 381.293C229.506 405.029 232.544 401.759 243.558 379.463C286.745 292.041 354.612 159.266 313.114 78.731C297.753 48.9201 281.73 59.1061 266.629 91.3841C221.244 188.396 204.425 419.421 125.112 473.631C220.472 36.7127 -50.0618 393.231 74.8452 755.037" stroke="%23F7F3ED" stroke-width="18.8459" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+                background-size: contain;
+                background-position: top center;
+                background-repeat: no-repeat;
+}    
+                .about p{font-weight:200;font-size:20px;max-width:60ch;margin:0.5em auto;}
+                .about p.xl{font-family: 'bricolage grotesque', serif;font-weight:800;font-size:clamp(38px, 10vw, 112px);line-height:130%;margin:0 0 .5em;color:#403674}
                 
-            section.employers{background: #31302F;color: #FEFAF6}
+            section.employers{background: #31302F;color: #FEFAF6; text-align:center}
                 .employers h2{font-size: 11px;font-weight: 300;text-transform: uppercase;}
-                .employers ul{display:flex;flex-wrap:wrap;gap:0rem 2rem}
-                .employers ul li{margin-right:1rem;list-style:none;}
+                .employers ul{display:flex;flex-wrap:wrap;gap:2rem;justify-content:center}
+                .employers ul li{margin-right:1rem;list-style:none;line-height:normal}
                 .employers ul li{font-size: 28px;font-weight:300;}
-                .employers ul li .client{color: #7E9EAA;font-weight: 100;margin:0}
+                .employers ul li .client{color: #E8DCFF;font-weight: 100;margin:0;font-size:70%;text-wrap:nowrap;gap:0 1rem}
 
-            section.links{background: #FEFAF6;color:#31302F;}    
+            section.links{background: #FEFAF6;color:#31302F;text-align:center}    
                 section.links ul li{display:inline-block;margin-right:1rem;}
         </style>
         <script type="text/javascript">
@@ -41,10 +46,12 @@
 		<section class="about content-container">
             <div class="inner">
                 <div class="copy">
-                    <p class="xl">Hello, I'm Sean —</p>
-                    <p class="xl">A designer with 15+ years of experience solving problems for people & businesses with strategic & delightful work.</p>
-                    <p>My background is front-end development, UX & product design. I have worked at design firms & digital agencies, as a full-time contractor, and leading design at startups. I have lived/worked in SF, Chicago & NYC — but chose Vacationland and now live in beautiful Portland, Maine 🦞. </p>
+                    <p class="xl">Hey</p>
+                    <p>I'm Sean. I come with 15 years of diverse design experience. </p>
+                    <p>I have designed at startups, design firms and digital agencies. I have worked on projects ranging from fashion to fintech, from 0→1 apps to landing pages. I have had business cards with the the following titles: front-end developer, information architect, interaction designer, digital technologist, UX designer, and product designer.</p>
+                    <p>I live in beautiful Portland, Maine; by way of NYC, Chicago and SF.</p>
                     <p>I am currently Staff Designer at <a href="https://www.foyersavings.com">Foyer Savings</a>.</p>
+
                 </div>
             </div>
         </section>
@@ -52,8 +59,8 @@
             <div class="inner">
                 <h2>Who I've worked with:</h2>
                 <ul>
-                    <li>Hawthorne</li>
-                    <li>Foyer</li>
+                   
+                    <li>Foyer</li> <li>Hawthorne</li>
                     <li>AKQA <span class="client">Target, Visa, Xbox, Nike, Gap</span></li>
                     <li>Huge <span class="client">Chase, Universal Studios</span></li>
                     <li>R/GA <span class="client">Samsung, Equinox</span></li>
